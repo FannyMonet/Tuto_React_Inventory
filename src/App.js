@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import FilterableProductTable from './components/FilterableProductTable/FilterableProductTable'
+import 'materialize-css/dist/css/materialize.min.css'
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -13,7 +14,9 @@ const PRODUCTS = [
 
 function App() {
   return (
-    <FilterableProductTable products={PRODUCTS} />
+    <div className="container">
+      <FilterableProductTable products={PRODUCTS} />
+    </div>
   );
 }
 
